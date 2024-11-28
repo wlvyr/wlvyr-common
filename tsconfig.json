@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    },
+
+    // declaration + emitDeclarationOnly to true - Great if you're using TS only for types (no .ts files, just .d.ts output).
+    "declaration": true,
+    "emitDeclarationOnly": true,
+
+    //  Enables JSDoc-style + .d.ts. type checking in JS files.
+    "allowJs": true,
+    "checkJs": true,
+
+    // Standard ESM support.
+    "esModuleInterop": true,
+    "moduleResolution": "bundler", // Helps resolve ESM-style imports
+    "allowSyntheticDefaultImports": true,
+
+    "resolveJsonModule": true,
+    "strict": true,
+    "rootDir": "src",
+    "outDir": "./dist/types",
+    "target": "ESNext", // Compile to latest JS
+    "module": "esnext", // Use ES Modules syntax: import/export
+
+    "typeRoots": [
+      "./types",
+      "./dist/types",
+      "./node_modules/@types",
+      "./node_modules/**/@types"
+    ] // Tells TypeScript/IntelliSense where to look for types.
+  },
+  "include": ["src/**/*.js"],
+  "exclude": [
+    "dist",
+    "./types", // Avoid type files being re-checked as JS
+    "./dist/types", // Avoid type files being re-checked as JS
+    "**/*.test.js",
+    "**/*.spec.js",
+    "node_modules/**/*.js",
+    "configs/jest.config.js",
+    "config/**/*test*.js",
+    "src/error/error-messages.js"
+  ]
+}

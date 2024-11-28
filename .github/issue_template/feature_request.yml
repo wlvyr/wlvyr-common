@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest an idea or enhancement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem are you trying to solve?
+      placeholder: I'd like to do X, but currently it’s difficult because...
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature or improvement you’d like to see.
+      placeholder: Add an option to do Y...
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered other approaches or workarounds?

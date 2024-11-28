@@ -1,0 +1,17 @@
+// jsconfig.json is only used for intellisense in test files.
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@wlvyr/common": ["src/common/index.js"],
+      "@wlvyr/common/*": ["src/*"]
+    },
+    "allowJs": true,
+    "strict": true,
+
+    // intellisense
+    "esModuleInterop": true,
+    "moduleResolution": "node", // Helps resolve ESM-style imports
+    "allowSyntheticDefaultImports": true
+  }
+}

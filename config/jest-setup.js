@@ -1,0 +1,1 @@
+// Other jest config that has to be coded

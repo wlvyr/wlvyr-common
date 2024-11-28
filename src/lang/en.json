@@ -1,0 +1,16 @@
+{
+    "Exceptions": {
+        "ArgumentUndefinedException": "argument undefined exception",
+        "ArgumentNullException": "argument null exception",
+        "ValueNotvalid": "value is not valid",
+        "NotImplemented": "NotImplemented"
+    },
+    "Network": {
+        "Request": {
+            "QueryObjInvalid": "Array not supported. Use arrayToQueryString",
+            "BadRequest": "Sorry but the request cannot be done at this time. If the error persists, please contact support.",
+            "Aborted": "The request has been aborted."
+        },
+        "NetworkError": "Network error. Please try again later"
+    }
+}

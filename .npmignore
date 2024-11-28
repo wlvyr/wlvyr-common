@@ -1,0 +1,8 @@
+# .npmignore
+# Ignore everything except dist and some important files
+*
+!dist/
+!dist/**
+!README.md
+!LICENSE
+!package.json
